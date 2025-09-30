@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alabama's Endangered Turtles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc; /* Light gray background */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center p-4 sm:p-8">
+    <header class="w-full max-w-4xl text-center mb-10 p-6 bg-green-700 rounded-xl shadow-lg">
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-white">Alabama's Endangered Turtles</h1>
+        <p class="text-xl text-green-200 mt-2">Guardians of the Gulf, Rivers, and Land</p>
+    </header>
 
+    <main class="w-full max-w-4xl">
+        <section class="mb-10 text-center p-6 bg-white rounded-xl shadow-md border-t-4 border-green-500">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">The Mission</h2>
+            <p class="text-gray-600">
+                This project provides an interactive presentation on five endangered turtle species found in Alabama. Learn about their biology, unique tracks, and critical habitats in our state's diverse ecosystems. Click on a species below to begin the presentation.
+            </p>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Navigation Cards -->
+            <a href="kemps_ridley.html" class="turtle-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-[1.02] border-b-4 border-blue-500">
+                <h3 class="text-xl font-bold text-blue-700">Kemp's Ridley Sea Turtle</h3>
+                <p class="text-sm text-gray-500 italic">(Lepidochelys kempii)</p>
+            </a>
+
+            <a href="loggerhead.html" class="turtle-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-[1.02] border-b-4 border-yellow-600">
+                <h3 class="text-xl font-bold text-yellow-800">Loggerhead Sea Turtle</h3>
+                <p class="text-sm text-gray-500 italic">(Caretta caretta)</p>
+            </a>
+
+            <a href="gopher_tortoise.html" class="turtle-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-[1.02] border-b-4 border-amber-800">
+                <h3 class="text-xl font-bold text-amber-900">Gopher Tortoise</h3>
+                <p class="text-sm text-gray-500 italic">(Gopherus polyphemus)</p>
+            </a>
+
+            <a href="flattened_musk.html" class="turtle-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-[1.02] border-b-4 border-teal-600">
+                <h3 class="text-xl font-bold text-teal-700">Flattened Musk Turtle</h3>
+                <p class="text-sm text-gray-500 italic">(Sternotherus depressus)</p>
+            </a>
+
+            <a href="alabama_red_bellied.html" class="turtle-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-[1.02] border-b-4 border-red-600">
+                <h3 class="text-xl font-bold text-red-700">Alabama Red-bellied Turtle</h3>
+                <p class="text-sm text-gray-500 italic">(Pseudemys rubriventris)</p>
+            </a>
+            
+            <!-- Spacer to maintain grid look -->
+            <div class="hidden lg:block"></div> 
+        </section>
+    </main>
+
+    <footer class="mt-12 w-full max-w-4xl text-center text-sm text-gray-500">
+        <p>&copy; 2024 Alabama Turtle Conservation Project</p>
+    </footer>
+</body>
+</html>
