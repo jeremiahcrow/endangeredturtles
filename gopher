@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gopher Tortoise (Gopherus polyphemus)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f7e6d7; }
+        .slide { display: none; }
+        .slide-active { display: block; animation: fadeIn 0.5s; }
+        @keyframes fadeIn { from { opacity: 0.5; } to { opacity: 1; } }
+        .nav-link:hover { background-color: #854d0e; color: white; }
+    </style>
+</head>
+<body class="min-h-screen p-4 sm:p-8">
+
+    <header class="w-full max-w-4xl mx-auto text-center mb-8">
+        <a href="index.html" class="text-amber-700 hover:text-amber-900 transition duration-150 text-lg font-semibold">&larr; Back to Home</a>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2">Gopher Tortoise</h1>
+        <p class="text-xl text-gray-600 italic">(Gopherus polyphemus)</p>
+    </header>
+
+    <main class="w-full max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl p-6 sm:p-10 border-t-8 border-amber-800">
+        
+        <!-- Image & Navigation -->
+        <div class="flex flex-col lg:flex-row gap-6 mb-8">
+            <div class="lg:w-1/2">
+                <img src="https://placehold.co/800x500/78350f/ffffff?text=Gopher+Tortoise" alt="Gopher Tortoise" class="w-full h-auto rounded-xl shadow-lg object-cover">
+            </div>
+            <div class="lg:w-1/2 flex flex-col justify-center">
+                <nav class="flex flex-wrap gap-2 justify-center">
+                    <button class="nav-btn bg-amber-800 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-200" data-slide="1">Overview</button>
+                    <button class="nav-btn bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg shadow-md transition duration-200" data-slide="2">Habitat & Location</button>
+                    <button class="nav-btn bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg shadow-md transition duration-200" data-slide="3">Track ID (Key)</button>
+                    <button class="nav-btn bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg shadow-md transition duration-200" data-slide="4">Resources</button>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Slideshow Content -->
+        <div class="slides-container">
+            
+            <!-- Slide 1: Biological Overview -->
+            <div id="slide-1" class="slide slide-active">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4 border-b pb-2">1. Biological Overview</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    The Gopher Tortoise is Alabama's only native tortoise, meaning it is a land-dwelling turtle. It is a **keystone species** because its deep burrows provide shelter for over $350$ other animal species. They have stumpy, elephant-like hind legs and powerful, shovel-shaped front legs for digging. Their status is federally **Threatened** west of the Mobile and Tombigbee Rivers.
+                </p>
+            </div>
+
+            <!-- Slide 2: Habitat & Location -->
+            <div id="slide-2" class="slide">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4 border-b pb-2">2. Habitat & Geographical Location</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Gopher Tortoises require dry, well-drained, sandy soils for digging their extensive burrows. In Alabama, populations are primarily concentrated in the **coastal plain and longleaf pine ecosystems** of the southern and southeastern counties, where the appropriate soil and sunny conditions exist. A typical burrow can be $15$ feet long and $6.5$ feet deep.
+                </p>
+            </div>
+
+            <!-- Slide 3: Footprint/Track Characteristics -->
+            <div id="slide-3" class="slide">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4 border-b pb-2">3. Track Identification (Land Print)</h2>
+                <div class="bg-amber-50 p-4 rounded-lg border-l-4 border-amber-600">
+                    <h3 class="text-xl font-semibold text-amber-800 mb-2">Key Identification Features:</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>**Front Tracks:** Large, distinctive, and **splayed**. They are wide and flat, often showing clear marks from the **strong claws** on the front feet, designed like shovels for earth-moving. The tracks are often toe-in.</li>
+                        <li>**Rear Tracks:** Smaller, more compact, and **rounded** (resembling a miniature elephant's foot). The five short toes are less splayed than the front feet.</li>
+                        <li>**Gait:** Alternating left/right footprints. The tracks are often paired with a clear, shallow drag mark from the plastron, but no deep body trough like a sea turtle.</li>
+                    </ul>
+                </div>
+                <img src="https://placehold.co/800x200/92400e/ffffff?text=Gopher+Tortoise+Track+Diagram+(Shovel+Front,+Stump+Rear)" alt="Gopher Tortoise Track" class="mt-4 w-full h-auto rounded-lg">
+            </div>
+
+            <!-- Slide 4: Resources -->
+            <div id="slide-4" class="slide">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4 border-b pb-2">4. Additional Resources</h2>
+                <p class="text-gray-700 mb-4">
+                    Learn more about Gopher Tortoises through these educational resources.
+                </p>
+                <div class="space-y-4">
+                    <a href="#" class="block bg-gray-100 p-3 rounded-lg hover:bg-gray-200 transition duration-150 text-blue-600 font-medium" onclick="alert('In a real deployment, this would link to an external resource like FWC or a conservation trust.'); return false;">
+                        External Link: Gopher Tortoise Burrow Project (Placeholder)
+                    </a>
+                    <div class="bg-gray-100 p-3 rounded-lg">
+                        <p class="font-semibold text-gray-800 mb-2">Educational Video (Placeholder):</p>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=75yVn3bT5Z-L2Vf4" title="Placeholder Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="rounded-lg shadow-md"></iframe>
+                        <p class="text-sm text-gray-500 mt-2">Video Title: The Gopher Tortoise as a Keystone Species (Placeholder)</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const navButtons = document.querySelectorAll('.nav-btn');
+
+            function showSlide(slideIndex) {
+                slides.forEach(slide => slide.classList.remove('slide-active'));
+                navButtons.forEach(btn => btn.classList.remove('bg-amber-800', 'text-white'));
+                navButtons.forEach(btn => btn.classList.add('bg-gray-200', 'text-gray-700'));
+
+                const activeSlide = document.getElementById(`slide-${slideIndex}`);
+                const activeButton = document.querySelector(`.nav-btn[data-slide="${slideIndex}"]`);
+                
+                if (activeSlide) {
+                    activeSlide.classList.add('slide-active');
+                }
+                if (activeButton) {
+                    activeButton.classList.remove('bg-gray-200', 'text-gray-700');
+                    activeButton.classList.add('bg-amber-800', 'text-white');
+                }
+            }
+
+            // Initial state (Slide 1 active)
+            showSlide(1);
+
+            // Add event listeners
+            navButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const slideIndex = e.target.getAttribute('data-slide');
+                    showSlide(slideIndex);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
